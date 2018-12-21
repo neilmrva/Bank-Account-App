@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum TransactionCategory:String
+enum TransactionCategory:String, Codable
 {
     case income
     case groceries
@@ -18,7 +18,7 @@ enum TransactionCategory:String
     case fun
 }
 
-struct Transaction
+struct Transaction:Codable
 {
     let amount:Double
     let description:String

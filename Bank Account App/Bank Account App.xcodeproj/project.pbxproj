@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242421CD4F7E000D7FFC /* Transaction.swift */; };
 		9649242821CD50CA000D7FFC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242721CD50CA000D7FFC /* Account.swift */; };
+		9649242A21CD5B81000D7FFC /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242921CD5B81000D7FFC /* StorageController.swift */; };
 		968A51AA21AA2FD800112FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A51A921AA2FD800112FC5 /* AppDelegate.swift */; };
 		968A51AC21AA2FD800112FC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A51AB21AA2FD800112FC5 /* ViewController.swift */; };
 		968A51AF21AA2FD800112FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51AD21AA2FD800112FC5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		9649242421CD4F7E000D7FFC /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		9649242721CD50CA000D7FFC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9649242921CD5B81000D7FFC /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
 		968A51A621AA2FD800112FC5 /* Bank Account App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank Account App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968A51A921AA2FD800112FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968A51AB21AA2FD800112FC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9649242B21CD5B86000D7FFC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9649242921CD5B81000D7FFC /* StorageController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
 		968A519D21AA2FD800112FC5 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 			children = (
 				968A51A921AA2FD800112FC5 /* AppDelegate.swift */,
 				9649242621CD4F98000D7FFC /* Models */,
+				9649242B21CD5B86000D7FFC /* Model Controllers */,
 				968A51BC21AA301F00112FC5 /* View Controllers */,
 				968A51BB21AA301500112FC5 /* Views */,
 				968A51B021AA2FDE00112FC5 /* Assets.xcassets */,
@@ -169,6 +180,7 @@
 				9649242821CD50CA000D7FFC /* Account.swift in Sources */,
 				968A51AA21AA2FD800112FC5 /* AppDelegate.swift in Sources */,
 				9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */,
+				9649242A21CD5B81000D7FFC /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

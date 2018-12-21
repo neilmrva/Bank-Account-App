@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Account
+struct Account:Codable
 {
     let name:String
     let bank:String
