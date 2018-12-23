@@ -13,7 +13,7 @@
         <!--Accounts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AccountsViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
         <!--Account Name-->
         <scene sceneID="Phk-0y-hhP">
             <objects>
-                <viewController id="cz1-vr-Vvc" sceneMemberID="viewController">
+                <viewController id="cz1-vr-Vvc" customClass="TransactionsViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tj1-39-hPf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
         <!--New Account-->
         <scene sceneID="qna-t6-dBg">
             <objects>
-                <viewController id="jFO-y4-Ukd" sceneMemberID="viewController">
+                <viewController id="jFO-y4-Ukd" customClass="CreateAccountViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="59b-vb-VBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,11 +128,20 @@
                         <viewLayoutGuide key="safeArea" id="eIM-Y2-U2p"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Account" id="hLG-qc-GFy">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AFv-cd-PeR"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ob7-Ml-GnI"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AFv-cd-PeR">
+                            <connections>
+                                <segue destination="86I-bg-RXf" kind="unwind" unwindAction="cancelAccountCreation:" id="nsD-8p-cJU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ob7-Ml-GnI">
+                            <connections>
+                                <segue destination="86I-bg-RXf" kind="unwind" unwindAction="saveAccount:" id="qOn-Aj-xlB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSl-j4-3ZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="86I-bg-RXf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="956" y="1013"/>
         </scene>
@@ -173,7 +182,7 @@
         <!--New Transaction-->
         <scene sceneID="4HG-mG-yCG">
             <objects>
-                <viewController id="uPR-i9-2Ff" sceneMemberID="viewController">
+                <viewController id="uPR-i9-2Ff" customClass="CreateTransactionViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d18-SO-CyJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,11 +190,20 @@
                         <viewLayoutGuide key="safeArea" id="tkO-Ru-OGs"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Transaction" id="dba-F4-xpB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TqO-Yi-ojR"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ycv-Sx-qbH"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TqO-Yi-ojR">
+                            <connections>
+                                <segue destination="nci-iW-qgR" kind="unwind" unwindAction="cancelTransactionCreation:" id="pA1-Wj-EAa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ycv-Sx-qbH">
+                            <connections>
+                                <segue destination="nci-iW-qgR" kind="unwind" unwindAction="saveTransaction:" id="Dds-xj-iiJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mu-dC-asd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nci-iW-qgR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1833" y="1012"/>
         </scene>

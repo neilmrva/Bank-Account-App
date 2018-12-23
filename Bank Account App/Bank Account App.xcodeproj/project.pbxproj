@@ -16,6 +16,10 @@
 		968A51AF21AA2FD800112FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51AD21AA2FD800112FC5 /* Main.storyboard */; };
 		968A51B121AA2FDE00112FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B021AA2FDE00112FC5 /* Assets.xcassets */; };
 		968A51B421AA2FDE00112FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */; };
+		96AD8E6121CF1AF900345F31 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */; };
+		96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */; };
+		96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */; };
+		96AD8E6721CF1C6600345F31 /* CreateTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		968A51B021AA2FDE00112FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968A51B321AA2FDE00112FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		968A51B521AA2FDE00112FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				968A51AB21AA2FD800112FC5 /* ViewController.swift */,
+				96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */,
+				96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */,
+				96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */,
+				96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -181,9 +193,13 @@
 			files = (
 				968A51AC21AA2FD800112FC5 /* ViewController.swift in Sources */,
 				9649242D21CD6FB9000D7FFC /* StateController.swift in Sources */,
+				96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */,
 				9649242821CD50CA000D7FFC /* Account.swift in Sources */,
 				968A51AA21AA2FD800112FC5 /* AppDelegate.swift in Sources */,
+				96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */,
 				9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */,
+				96AD8E6721CF1C6600345F31 /* CreateTransactionViewController.swift in Sources */,
+				96AD8E6121CF1AF900345F31 /* AccountsViewController.swift in Sources */,
 				9649242A21CD5B81000D7FFC /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
