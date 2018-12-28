@@ -124,7 +124,37 @@
                     <view key="view" contentMode="scaleToFill" id="59b-vb-VBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-ik-quV">
+                                <rect key="frame" x="20" y="84" width="335" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Account Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-aN-n2Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bank Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-8I-LZG">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0123 4567 8901" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqO-4e-rfm">
+                                        <rect key="frame" x="0.0" y="100" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLv-ik-quV" firstAttribute="leading" secondItem="eIM-Y2-U2p" secondAttribute="leading" constant="20" id="FxU-55-rUa"/>
+                            <constraint firstItem="xLv-ik-quV" firstAttribute="top" secondItem="eIM-Y2-U2p" secondAttribute="top" constant="20" id="j2w-nF-4TW"/>
+                            <constraint firstItem="eIM-Y2-U2p" firstAttribute="trailing" secondItem="xLv-ik-quV" secondAttribute="trailing" constant="20" id="z8K-tW-XNM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eIM-Y2-U2p"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Account" id="hLG-qc-GFy">
