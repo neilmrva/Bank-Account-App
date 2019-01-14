@@ -16,6 +16,10 @@
 		968A51AF21AA2FD800112FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51AD21AA2FD800112FC5 /* Main.storyboard */; };
 		968A51B121AA2FDE00112FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B021AA2FDE00112FC5 /* Assets.xcassets */; };
 		968A51B421AA2FDE00112FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */; };
+		9694927421ECEA54006D24A4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694927321ECEA54006D24A4 /* UIColorExtension.swift */; };
+		969A29AF21ECF0A20033D551 /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29AE21ECF0A20033D551 /* FloatExtension.swift */; };
+		969A29B121ECF2C80033D551 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29B021ECF2C80033D551 /* StringExtension.swift */; };
+		969A29B321ECF4F20033D551 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29B221ECF4F20033D551 /* DateExtension.swift */; };
 		96AD8E6121CF1AF900345F31 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */; };
 		96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */; };
 		96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */; };
@@ -34,6 +38,10 @@
 		968A51B021AA2FDE00112FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968A51B321AA2FDE00112FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		968A51B521AA2FDE00112FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9694927321ECEA54006D24A4 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		969A29AE21ECF0A20033D551 /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
+		969A29B021ECF2C80033D551 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		969A29B221ECF4F20033D551 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				968A51A921AA2FD800112FC5 /* AppDelegate.swift */,
+				9694927221ECE9E3006D24A4 /* Extensions */,
 				9649242621CD4F98000D7FFC /* Models */,
 				9649242B21CD5B86000D7FFC /* Model Controllers */,
 				968A51BC21AA301F00112FC5 /* View Controllers */,
@@ -118,6 +127,17 @@
 				96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9694927221ECE9E3006D24A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9694927321ECEA54006D24A4 /* UIColorExtension.swift */,
+				969A29AE21ECF0A20033D551 /* FloatExtension.swift */,
+				969A29B021ECF2C80033D551 /* StringExtension.swift */,
+				969A29B221ECF4F20033D551 /* DateExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,14 +212,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				968A51AC21AA2FD800112FC5 /* ViewController.swift in Sources */,
+				969A29B321ECF4F20033D551 /* DateExtension.swift in Sources */,
 				9649242D21CD6FB9000D7FFC /* StateController.swift in Sources */,
+				969A29AF21ECF0A20033D551 /* FloatExtension.swift in Sources */,
 				96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */,
 				9649242821CD50CA000D7FFC /* Account.swift in Sources */,
 				968A51AA21AA2FD800112FC5 /* AppDelegate.swift in Sources */,
 				96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */,
 				9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */,
 				96AD8E6721CF1C6600345F31 /* CreateTransactionViewController.swift in Sources */,
+				9694927421ECEA54006D24A4 /* UIColorExtension.swift in Sources */,
 				96AD8E6121CF1AF900345F31 /* AccountsViewController.swift in Sources */,
+				969A29B121ECF2C80033D551 /* StringExtension.swift in Sources */,
 				9649242A21CD5B81000D7FFC /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
