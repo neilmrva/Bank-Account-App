@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8zt-8d-mSd">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Qs-vI-d9Q">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,18 +11,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AccountsViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vvw-dU-byM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="137" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-3B-qQi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="127" id="Vle-cE-fux" customClass="AccountCell" customModule="Banking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="127" id="Vle-cE-fux" customClass="AccountCell" customModule="Bank_Account_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vle-cE-fux" id="bTS-87-4bh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZu-3x-88k">
@@ -126,14 +122,14 @@
             <objects>
                 <viewController id="cz1-vr-Vvc" customClass="TransactionsViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JZ2-Y4-yks">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DFn-j6-iEr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="Pg4-1s-Cs6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="103"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jPS-J7-4Wj">
@@ -161,11 +157,11 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="95" id="sYa-l5-ZyE" customClass="TransactionCell" customModule="Banking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="131" width="375" height="95"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="95" id="sYa-l5-ZyE" customClass="TransactionCell" customModule="Bank_Account_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="131" width="600" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sYa-l5-ZyE" id="L7p-1i-sLx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="K7w-bo-9Ya">
@@ -281,26 +277,26 @@
             <objects>
                 <viewController id="jFO-y4-Ukd" customClass="CreateAccountViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iCN-Eu-AOe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DcY-Wr-CfU">
-                                <rect key="frame" x="25" y="89" width="325" height="122"/>
+                                <rect key="frame" x="25" y="89" width="550" height="122"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q06-qJ-Pw3">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="24"/>
                                         <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-9x-1wF">
-                                        <rect key="frame" x="0.0" y="49" width="325" height="24"/>
+                                        <rect key="frame" x="0.0" y="49" width="550" height="24"/>
                                         <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vD-RH-VaX">
-                                        <rect key="frame" x="0.0" y="98" width="325" height="24"/>
+                                        <rect key="frame" x="0.0" y="98" width="550" height="24"/>
                                         <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -328,6 +324,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="accountName" destination="Q06-qJ-Pw3" id="QiE-z4-u0A"/>
+                        <outlet property="accountNumber" destination="1vD-RH-VaX" id="zZB-qg-al3"/>
+                        <outlet property="bankName" destination="D9e-9x-1wF" id="caO-QF-bGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSl-j4-3ZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="86I-bg-RXf" userLabel="Exit" sceneMemberID="exit"/>
@@ -372,15 +373,15 @@
         <scene sceneID="4HG-mG-yCG">
             <objects>
                 <viewController id="uPR-i9-2Ff" customClass="CreateTransactionViewController" customModule="Bank_Account_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GzI-td-cYK" customClass="NewTransactionView" customModule="Banking" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="GzI-td-cYK" customClass="NewTransactionView" customModule="Bank_Account_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-8E-5rb">
-                                <rect key="frame" x="25" y="89" width="325" height="339"/>
+                                <rect key="frame" x="25" y="89" width="550" height="339"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-VI-cKe">
-                                        <rect key="frame" x="112" y="0.0" width="101.5" height="78"/>
+                                        <rect key="frame" x="224.5" y="0.0" width="101.5" height="78"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdC-u2-HhH">
                                                 <rect key="frame" x="1" y="0.0" width="99" height="42"/>
@@ -397,7 +398,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="xYI-Nk-S26">
-                                        <rect key="frame" x="0.5" y="103" width="324" height="106"/>
+                                        <rect key="frame" x="113" y="103" width="324" height="106"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Hle-u5-tL6">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="106"/>
@@ -422,7 +423,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="Jqo-K3-nIS"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="rbL-Th-dYc"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -473,7 +474,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="H7A-NB-vbO"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="4Gb-g7-W4V"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -522,7 +523,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="nLd-ep-Ugg"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="iIs-29-hId"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -557,7 +558,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Tu5-sV-BeR">
-                                        <rect key="frame" x="0.5" y="234" width="324" height="105"/>
+                                        <rect key="frame" x="113" y="234" width="324" height="105"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZjB-OX-VqX">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="105"/>
@@ -582,7 +583,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="veh-qE-NFO"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="Fcs-GG-o26"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -631,7 +632,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="gRM-GT-EVC"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="WF7-Wf-NOz"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -680,7 +681,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="selectCategory:" destination="GzI-td-cYK" eventType="touchUpInside" id="yNa-qJ-sYg"/>
+                                                                    <action selector="onCategorySelected:" destination="GzI-td-cYK" eventType="touchUpInside" id="lFM-ub-BRt"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -729,20 +730,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9bf-U3-hUL"/>
                         <connections>
-                            <outlet property="amountTextField" destination="zdC-u2-HhH" id="zyF-N9-bLw"/>
-                            <outlet property="descriptionTextField" destination="pp5-Y9-2qJ" id="Ee6-Md-wL4"/>
+                            <outlet property="amountTextField" destination="zdC-u2-HhH" id="3Ss-q3-rN1"/>
+                            <outlet property="descriptionTextField" destination="pp5-Y9-2qJ" id="7Ie-bv-1Sf"/>
                             <outletCollection property="ringViews" destination="7HR-Oo-BKu" collectionClass="NSMutableArray" id="bCm-bF-2F6"/>
                             <outletCollection property="ringViews" destination="6We-Hr-qKU" collectionClass="NSMutableArray" id="abV-GP-TPz"/>
                             <outletCollection property="ringViews" destination="jwa-Eg-daI" collectionClass="NSMutableArray" id="qf6-Ao-dDo"/>
                             <outletCollection property="ringViews" destination="NjJ-Y8-iAO" collectionClass="NSMutableArray" id="CJi-z2-8ej"/>
                             <outletCollection property="ringViews" destination="caa-l2-xrR" collectionClass="NSMutableArray" id="oCm-C3-vFK"/>
                             <outletCollection property="ringViews" destination="zvF-mx-2m0" collectionClass="NSMutableArray" id="Ivw-cK-kPn"/>
-                            <outletCollection property="categoryButtons" destination="RVT-3G-mdE" collectionClass="NSMutableArray" id="0qL-mk-Jb6"/>
-                            <outletCollection property="categoryButtons" destination="ogf-4s-xzQ" collectionClass="NSMutableArray" id="cI1-Qx-H45"/>
-                            <outletCollection property="categoryButtons" destination="2MJ-jA-ngU" collectionClass="NSMutableArray" id="Fxx-KB-h30"/>
-                            <outletCollection property="categoryButtons" destination="Rs0-FI-zjl" collectionClass="NSMutableArray" id="LYt-Ec-ndq"/>
-                            <outletCollection property="categoryButtons" destination="QJw-dI-eQg" collectionClass="NSMutableArray" id="PuS-v9-RX0"/>
-                            <outletCollection property="categoryButtons" destination="UDu-YA-ONK" collectionClass="NSMutableArray" id="LlI-wE-Ylj"/>
+                            <outletCollection property="categoryButtons" destination="RVT-3G-mdE" collectionClass="NSMutableArray" id="USq-17-1yJ"/>
+                            <outletCollection property="categoryButtons" destination="ogf-4s-xzQ" collectionClass="NSMutableArray" id="XEJ-lU-rku"/>
+                            <outletCollection property="categoryButtons" destination="2MJ-jA-ngU" collectionClass="NSMutableArray" id="hez-dY-bWg"/>
+                            <outletCollection property="categoryButtons" destination="Rs0-FI-zjl" collectionClass="NSMutableArray" id="wAZ-3n-uv8"/>
+                            <outletCollection property="categoryButtons" destination="QJw-dI-eQg" collectionClass="NSMutableArray" id="vH3-uc-OUc"/>
+                            <outletCollection property="categoryButtons" destination="UDu-YA-ONK" collectionClass="NSMutableArray" id="xxZ-ts-IPc"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="New Transaction" id="dba-F4-xpB">

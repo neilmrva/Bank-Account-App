@@ -8,9 +8,14 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
-
-    override func viewDidLoad() {
+class CreateAccountViewController: UIViewController
+{
+    @IBOutlet weak var accountName: UITextField!
+    @IBOutlet weak var bankName: UITextField!
+    @IBOutlet weak var accountNumber: UITextField!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
