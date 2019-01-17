@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum TransactionCategory:String, Codable
 {
@@ -16,6 +17,34 @@ enum TransactionCategory:String, Codable
     case home
     case transport
     case fun
+}
+
+extension TransactionCategory
+{
+    struct Appearance
+    {
+        let color:UIColor
+        let image:UIImage
+    }
+    
+    var appearance:Appearance
+    {
+        switch self
+        {
+            case .income:
+                return Appearance(color: .lightGrassGreen, image: #imageLiteral(resourceName: "income"))
+            case .groceries:
+                return Appearance(color: .seafoamBlue, image: #imageLiteral(resourceName: "groceries"))
+            case .utilities:
+                return Appearance(color: .liliac, image: #imageLiteral(resourceName: "utilities"))
+            case .home:
+                return Appearance(color: .sunflowerYellow, image: #imageLiteral(resourceName: "home"))
+            case .transport:
+                return Appearance(color: .peach, image: #imageLiteral(resourceName: "transport"))
+            case .fun:
+                return Appearance(color: .carnation, image: #imageLiteral(resourceName: "fun"))
+        }
+    }
 }
 
 struct Transaction:Codable
