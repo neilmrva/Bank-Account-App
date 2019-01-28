@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="127" id="Vle-cE-fux" customClass="AccountCell" customModule="Bank_Account_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="127" id="Vle-cE-fux" customClass="AccountTableViewCell" customModule="Bank_Account_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vle-cE-fux" id="bTS-87-4bh">
@@ -30,13 +30,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZu-3x-88k">
-                                                    <rect key="frame" x="25" y="25" width="550" height="102"/>
+                                                    <rect key="frame" x="25" y="25" width="325" height="102"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="M02-we-gfb">
-                                                            <rect key="frame" x="12" y="12" width="526" height="78"/>
+                                                            <rect key="frame" x="12" y="12" width="301" height="78"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="slW-Ax-dHa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="526" height="19.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="19.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfA-KO-uwS">
                                                                             <rect key="frame" x="0.0" y="0.0" width="111" height="19.5"/>
@@ -45,7 +45,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,234.56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTN-l3-pQH">
-                                                                            <rect key="frame" x="456.5" y="0.0" width="69.5" height="19.5"/>
+                                                                            <rect key="frame" x="231.5" y="0.0" width="69.5" height="19.5"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
@@ -53,13 +53,13 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWo-gT-b8u">
-                                                                    <rect key="frame" x="0.0" y="32" width="526" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="32" width="301" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0123 4567 8901 2345 6789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHZ-JT-VJm">
-                                                                    <rect key="frame" x="0.0" y="61" width="526" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="61" width="301" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -89,11 +89,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bankLabel" destination="CWo-gT-b8u" id="T6m-Tb-zYt"/>
-                                            <outlet property="coloredView" destination="TZu-3x-88k" id="rkF-hi-Sbd"/>
-                                            <outlet property="nameLabel" destination="BfA-KO-uwS" id="ST1-7s-cfm"/>
-                                            <outlet property="numberLabel" destination="oHZ-JT-VJm" id="zc1-qO-p5k"/>
-                                            <outlet property="totalLabel" destination="vTN-l3-pQH" id="ZeH-lc-Iuk"/>
+                                            <outlet property="bankLabel" destination="CWo-gT-b8u" id="8oz-iY-Qbg"/>
+                                            <outlet property="coloredView" destination="TZu-3x-88k" id="LXB-7D-CtO"/>
+                                            <outlet property="nameLabel" destination="BfA-KO-uwS" id="JrU-6U-ITc"/>
+                                            <outlet property="numberLabel" destination="oHZ-JT-VJm" id="Nf8-wP-ITg"/>
+                                            <outlet property="totalLabel" destination="vTN-l3-pQH" id="7yl-Eq-TIJ"/>
                                             <segue destination="cz1-vr-Vvc" kind="show" id="ZK6-jx-ZOD"/>
                                         </connections>
                                     </tableViewCell>
@@ -137,16 +137,16 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jPS-J7-4Wj">
-                                            <rect key="frame" x="25" y="25" width="550" height="78"/>
+                                            <rect key="frame" x="25" y="25" width="325" height="78"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,234.56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlo-4A-JSW">
-                                                    <rect key="frame" x="195" y="0.0" width="160.5" height="42"/>
+                                                    <rect key="frame" x="82.5" y="0.0" width="160.5" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                     <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0123 4567 8901 2345 6789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byV-4l-aM1">
-                                                    <rect key="frame" x="150" y="54" width="250" height="24"/>
+                                                    <rect key="frame" x="37.5" y="54" width="250" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                     <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="95" id="sYa-l5-ZyE" customClass="TransactionCell" customModule="Bank_Account_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="95" id="sYa-l5-ZyE" customClass="TransactionTableViewCell" customModule="Bank_Account_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="131" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sYa-l5-ZyE" id="L7p-1i-sLx">
@@ -169,10 +169,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="K7w-bo-9Ya">
-                                                    <rect key="frame" x="25" y="25" width="550" height="70"/>
+                                                    <rect key="frame" x="25" y="25" width="325" height="70"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Mj-9vA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="451" height="70"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="226" height="70"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZT-Di-0Nz">
                                                                     <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -195,7 +195,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9dO-w5-no4">
-                                                                    <rect key="frame" x="82" y="12" width="369" height="46"/>
+                                                                    <rect key="frame" x="82" y="12" width="144" height="46"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lay-go-NhS">
                                                                             <rect key="frame" x="0.0" y="0.0" width="83" height="19.5"/>
@@ -214,7 +214,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da1-rp-6ra">
-                                                            <rect key="frame" x="463" y="24.5" width="87" height="21.5"/>
+                                                            <rect key="frame" x="238" y="24.5" width="87" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                             <color key="textColor" red="0.31372549020000001" green="0.41960784309999999" blue="0.47058823529999999" alpha="1" colorSpace="deviceRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -229,11 +229,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="amountLabel" destination="da1-rp-6ra" id="bE5-oH-paq"/>
-                                            <outlet property="categoryImageView" destination="e3N-sH-6N8" id="Kyg-T8-NKk"/>
-                                            <outlet property="circleView" destination="eZT-Di-0Nz" id="A9m-yI-Czk"/>
-                                            <outlet property="dateLabel" destination="wif-j5-P6L" id="Hka-dq-Fod"/>
-                                            <outlet property="descriptionLabel" destination="Lay-go-NhS" id="8tu-nn-huL"/>
+                                            <outlet property="amountLabel" destination="da1-rp-6ra" id="t8Z-nQ-3dw"/>
+                                            <outlet property="categoryImageView" destination="e3N-sH-6N8" id="Ymg-FS-9IC"/>
+                                            <outlet property="circleView" destination="eZT-Di-0Nz" id="VrF-PW-28l"/>
+                                            <outlet property="dateLabel" destination="wif-j5-P6L" id="kFd-UP-S6p"/>
+                                            <outlet property="descriptionLabel" destination="Lay-go-NhS" id="GC8-4S-KgN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

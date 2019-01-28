@@ -17,7 +17,6 @@
 		968A51B121AA2FDE00112FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B021AA2FDE00112FC5 /* Assets.xcassets */; };
 		968A51B421AA2FDE00112FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */; };
 		9694927421ECEA54006D24A4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694927321ECEA54006D24A4 /* UIColorExtension.swift */; };
-		969A29AF21ECF0A20033D551 /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29AE21ECF0A20033D551 /* FloatExtension.swift */; };
 		969A29B121ECF2C80033D551 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29B021ECF2C80033D551 /* StringExtension.swift */; };
 		969A29B321ECF4F20033D551 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29B221ECF4F20033D551 /* DateExtension.swift */; };
 		969A29B521ECFC790033D551 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A29B421ECFC790033D551 /* NewTransactionView.swift */; };
@@ -25,6 +24,9 @@
 		96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */; };
 		96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */; };
 		96AD8E6721CF1C6600345F31 /* CreateTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */; };
+		96D06DCC21FF704E00DA12AB /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D06DCB21FF704E00DA12AB /* AccountTableViewCell.swift */; };
+		96D06DD021FF750200DA12AB /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D06DCF21FF750200DA12AB /* DoubleExtension.swift */; };
+		96D06DD221FF87D500DA12AB /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D06DD121FF87D500DA12AB /* TransactionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +42,6 @@
 		968A51B321AA2FDE00112FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		968A51B521AA2FDE00112FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9694927321ECEA54006D24A4 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		969A29AE21ECF0A20033D551 /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
 		969A29B021ECF2C80033D551 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		969A29B221ECF4F20033D551 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		969A29B421ECFC790033D551 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewController.swift; sourceTree = "<group>"; };
+		96D06DCB21FF704E00DA12AB /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		96D06DCF21FF750200DA12AB /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		96D06DD121FF87D500DA12AB /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				968A51AD21AA2FD800112FC5 /* Main.storyboard */,
 				968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */,
 				969A29B421ECFC790033D551 /* NewTransactionView.swift */,
+				96D06DCB21FF704E00DA12AB /* AccountTableViewCell.swift */,
+				96D06DD121FF87D500DA12AB /* TransactionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,8 +141,8 @@
 		9694927221ECE9E3006D24A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				96D06DCF21FF750200DA12AB /* DoubleExtension.swift */,
 				9694927321ECEA54006D24A4 /* UIColorExtension.swift */,
-				969A29AE21ECF0A20033D551 /* FloatExtension.swift */,
 				969A29B021ECF2C80033D551 /* StringExtension.swift */,
 				969A29B221ECF4F20033D551 /* DateExtension.swift */,
 			);
@@ -215,14 +221,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				968A51AC21AA2FD800112FC5 /* ViewController.swift in Sources */,
+				96D06DD221FF87D500DA12AB /* TransactionTableViewCell.swift in Sources */,
 				969A29B321ECF4F20033D551 /* DateExtension.swift in Sources */,
 				9649242D21CD6FB9000D7FFC /* StateController.swift in Sources */,
-				969A29AF21ECF0A20033D551 /* FloatExtension.swift in Sources */,
 				96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */,
 				9649242821CD50CA000D7FFC /* Account.swift in Sources */,
 				968A51AA21AA2FD800112FC5 /* AppDelegate.swift in Sources */,
 				96AD8E6321CF1B1600345F31 /* CreateAccountViewController.swift in Sources */,
 				9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */,
+				96D06DD021FF750200DA12AB /* DoubleExtension.swift in Sources */,
+				96D06DCC21FF704E00DA12AB /* AccountTableViewCell.swift in Sources */,
 				96AD8E6721CF1C6600345F31 /* CreateTransactionViewController.swift in Sources */,
 				9694927421ECEA54006D24A4 /* UIColorExtension.swift in Sources */,
 				96AD8E6121CF1AF900345F31 /* AccountsViewController.swift in Sources */,
