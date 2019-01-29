@@ -14,8 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barTintColor = .skyBlue
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        // Inject state controller dependency into accoutns view controller
+        if let initialViewController = window?.rootViewController as? UINavigationController
+        {
+            if let accountsViewController = initialViewController.viewControllers.first as? AccountsViewController
+            {
+                accountsViewController.stateController = StateController(storageController: StorageController())
+            }
+        }
+        
         return true
     }
 
