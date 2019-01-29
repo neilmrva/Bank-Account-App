@@ -70,8 +70,8 @@
 		9649242621CD4F98000D7FFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9649242421CD4F7E000D7FFC /* Transaction.swift */,
 				9649242721CD50CA000D7FFC /* Account.swift */,
+				9649242421CD4F7E000D7FFC /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,9 +79,9 @@
 		9649242B21CD5B86000D7FFC /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9649242921CD5B81000D7FFC /* StorageController.swift */,
-				9649242C21CD6FB9000D7FFC /* StateController.swift */,
 				9611ED7421FFE753004D9759 /* AccountsDataSource.swift */,
+				9649242C21CD6FB9000D7FFC /* StateController.swift */,
+				9649242921CD5B81000D7FFC /* StorageController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -105,14 +105,14 @@
 		968A51A821AA2FD800112FC5 /* Bank Account App */ = {
 			isa = PBXGroup;
 			children = (
+				968A51B521AA2FDE00112FC5 /* Info.plist */,
 				968A51A921AA2FD800112FC5 /* AppDelegate.swift */,
+				968A51B021AA2FDE00112FC5 /* Assets.xcassets */,
 				9694927221ECE9E3006D24A4 /* Extensions */,
-				9649242621CD4F98000D7FFC /* Models */,
 				9649242B21CD5B86000D7FFC /* Model Controllers */,
+				9649242621CD4F98000D7FFC /* Models */,
 				968A51BC21AA301F00112FC5 /* View Controllers */,
 				968A51BB21AA301500112FC5 /* Views */,
-				968A51B021AA2FDE00112FC5 /* Assets.xcassets */,
-				968A51B521AA2FDE00112FC5 /* Info.plist */,
 			);
 			path = "Bank Account App";
 			sourceTree = "<group>";
@@ -120,11 +120,11 @@
 		968A51BB21AA301500112FC5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				968A51AD21AA2FD800112FC5 /* Main.storyboard */,
-				968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */,
-				969A29B421ECFC790033D551 /* NewTransactionView.swift */,
 				96D06DCB21FF704E00DA12AB /* AccountTableViewCell.swift */,
+				969A29B421ECFC790033D551 /* NewTransactionView.swift */,
 				96D06DD121FF87D500DA12AB /* TransactionTableViewCell.swift */,
+				968A51B221AA2FDE00112FC5 /* LaunchScreen.storyboard */,
+				968A51AD21AA2FD800112FC5 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,11 +132,11 @@
 		968A51BC21AA301F00112FC5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				968A51AB21AA2FD800112FC5 /* ViewController.swift */,
 				96AD8E6021CF1AF900345F31 /* AccountsViewController.swift */,
 				96AD8E6221CF1B1600345F31 /* CreateAccountViewController.swift */,
-				96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */,
 				96AD8E6621CF1C6600345F31 /* CreateTransactionViewController.swift */,
+				96AD8E6421CF1C4400345F31 /* TransactionsViewController.swift */,
+				968A51AB21AA2FD800112FC5 /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -144,10 +144,10 @@
 		9694927221ECE9E3006D24A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				96D06DCF21FF750200DA12AB /* DoubleExtension.swift */,
-				9694927321ECEA54006D24A4 /* UIColorExtension.swift */,
-				969A29B021ECF2C80033D551 /* StringExtension.swift */,
 				969A29B221ECF4F20033D551 /* DateExtension.swift */,
+				96D06DCF21FF750200DA12AB /* DoubleExtension.swift */,
+				969A29B021ECF2C80033D551 /* StringExtension.swift */,
+				9694927321ECEA54006D24A4 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

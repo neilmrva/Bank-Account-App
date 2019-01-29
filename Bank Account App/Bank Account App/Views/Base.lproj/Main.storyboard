@@ -327,7 +327,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ob7-Ml-GnI">
                             <connections>
-                                <segue destination="86I-bg-RXf" kind="unwind" unwindAction="saveAccount:" id="qOn-Aj-xlB"/>
+                                <segue destination="86I-bg-RXf" kind="unwind" identifier="SaveAccountSegue" unwindAction="saveAccount:" id="qOn-Aj-xlB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

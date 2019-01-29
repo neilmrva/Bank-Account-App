@@ -40,15 +40,29 @@ class AccountsViewController:UIViewController
     {
         
     }
-    
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        switch segue.identifier!
+        {
+            case "CreateAccountSegue":
+                if
+                    let navigationController = segue.destination as? UINavigationController,
+                    let createAccountViewController = navigationController.viewControllers.first as? CreateAccountViewController
+                {
+                    createAccountViewController.stateController = stateController
+                }
+            case "TransactionSegue":
+                break
+                
+            
+            default:
+                break
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

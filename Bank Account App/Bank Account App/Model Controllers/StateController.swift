@@ -19,7 +19,13 @@ class StateController
         self.accounts = storageController.loadAccounts() ?? [Account]()
     }
     
-    func add(account:Account)
+    func createAccount(accountName:String, bankName:String, accountNumber:String)
+    {
+        let account = Account(name: accountName, bank: bankName, number: accountNumber, transactions: [])
+        add(account: account)
+    }
+    
+    fileprivate func add(account:Account)
     {
         accounts.append(account)
         storageController.save(accounts: accounts)
