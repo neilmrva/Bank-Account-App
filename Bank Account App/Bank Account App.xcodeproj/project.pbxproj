@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9611ED7521FFE753004D9759 /* AccountsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611ED7421FFE753004D9759 /* AccountsDataSource.swift */; };
 		9649242521CD4F7E000D7FFC /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242421CD4F7E000D7FFC /* Transaction.swift */; };
 		9649242821CD50CA000D7FFC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242721CD50CA000D7FFC /* Account.swift */; };
 		9649242A21CD5B81000D7FFC /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649242921CD5B81000D7FFC /* StorageController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9611ED7421FFE753004D9759 /* AccountsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDataSource.swift; sourceTree = "<group>"; };
 		9649242421CD4F7E000D7FFC /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		9649242721CD50CA000D7FFC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		9649242921CD5B81000D7FFC /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				9649242921CD5B81000D7FFC /* StorageController.swift */,
 				9649242C21CD6FB9000D7FFC /* StateController.swift */,
+				9611ED7421FFE753004D9759 /* AccountsDataSource.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				968A51AC21AA2FD800112FC5 /* ViewController.swift in Sources */,
 				96D06DD221FF87D500DA12AB /* TransactionTableViewCell.swift in Sources */,
+				9611ED7521FFE753004D9759 /* AccountsDataSource.swift in Sources */,
 				969A29B321ECF4F20033D551 /* DateExtension.swift in Sources */,
 				9649242D21CD6FB9000D7FFC /* StateController.swift in Sources */,
 				96AD8E6521CF1C4400345F31 /* TransactionsViewController.swift in Sources */,

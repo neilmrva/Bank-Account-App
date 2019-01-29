@@ -10,12 +10,25 @@ import UIKit
 
 class AccountsViewController:UIViewController
 {
+    @IBOutlet fileprivate weak var tableView: UITableView!
+    fileprivate var dataSource:AccountsDataSource!
+    
+    var stateController:StateController!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        dataSource = AccountsDataSource(accounts: stateController.accounts)
+        tableView.dataSource = dataSource
+        tableView.reloadData()
     }
     
     @IBAction func cancelAccountCreation(_ segue:UIStoryboardSegue)

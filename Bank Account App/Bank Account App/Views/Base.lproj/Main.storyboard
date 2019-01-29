@@ -94,7 +94,7 @@
                                             <outlet property="nameLabel" destination="BfA-KO-uwS" id="JrU-6U-ITc"/>
                                             <outlet property="numberLabel" destination="oHZ-JT-VJm" id="Nf8-wP-ITg"/>
                                             <outlet property="totalLabel" destination="vTN-l3-pQH" id="7yl-Eq-TIJ"/>
-                                            <segue destination="cz1-vr-Vvc" kind="show" id="ZK6-jx-ZOD"/>
+                                            <segue destination="cz1-vr-Vvc" kind="show" identifier="TransactionSegue" id="ZK6-jx-ZOD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -112,10 +112,13 @@
                     <navigationItem key="navigationItem" title="Accounts" id="JMb-Wg-IQt">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vTV-YA-c67">
                             <connections>
-                                <segue destination="ecp-es-qXc" kind="show" id="o5Q-gs-Jlc"/>
+                                <segue destination="ecp-es-qXc" kind="show" identifier="CreateAccountSegue" id="o5Q-gs-Jlc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="e2K-3B-qQi" id="AAA-Gv-AsG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,7 @@ import Foundation
 class StateController
 {
     private let storageController:StorageController
-    private var accounts:[Account]
+    var accounts:[Account]
     
     init(storageController:StorageController)
     {
