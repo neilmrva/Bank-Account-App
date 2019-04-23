@@ -54,9 +54,14 @@ class AccountsViewController:UIViewController
                     createAccountViewController.stateController = stateController
                 }
             case "TransactionSegue":
-                break
-                
-            
+                if
+                    let transactionsViewController = segue.destination as? TransactionsViewController,
+                    let selectedIndex = tableView.indexPathForSelectedRow?.row
+                {
+                    let account = dataSource.accounts[selectedIndex]
+                    transactionsViewController.account = account
+                    transactionsViewController.stateController = stateController
+                }
             default:
                 break
         }

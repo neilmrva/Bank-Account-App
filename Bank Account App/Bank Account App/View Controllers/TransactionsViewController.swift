@@ -10,7 +10,9 @@ import UIKit
 
 class TransactionsViewController:UIViewController
 {
-
+    var stateController:StateController!
+    var account:Account!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
