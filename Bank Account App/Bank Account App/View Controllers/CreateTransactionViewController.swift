@@ -8,12 +8,35 @@
 
 import UIKit
 
-class CreateTransactionViewController: UIViewController {
+protocol CreateTransactionViewControllerDelegate:AnyObject
+{
+    func add(newTransaction:Transaction)
+}
 
-    override func viewDidLoad() {
+class CreateTransactionViewController: UIViewController
+{
+    weak var delegate:CreateTransactionViewControllerDelegate?
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "SaveTransactionSegue"
+        {
+            if  let newTransactionView = view as? NewTransactionView,
+                let amount = newTransactionView.amount,
+                let description = newTransactionView.transactionDescription,
+                let category = newTransactionView.selectedCategory
+            {
+                let transaction = Transaction(amount: amount, description: description, date: Date(), category: category)
+                delegate?.add(newTransaction: transaction)
+            }
+        }
     }
     
 

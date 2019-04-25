@@ -21,7 +21,7 @@ class NewTransactionView:UIView
     fileprivate var selectedIndex:Int = 0
     
     // MARK: Public Computed Properties
-    var amount:Float?
+    var amount:Double?
     {
         get
         {
@@ -31,7 +31,7 @@ class NewTransactionView:UIView
                 return nil
             }
             
-            return Float(text)
+            return Double(text)
         }
     }
     

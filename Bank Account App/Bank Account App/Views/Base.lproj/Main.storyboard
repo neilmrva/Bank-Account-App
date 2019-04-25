@@ -258,6 +258,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="numberLabel" destination="byV-4l-aM1" id="mfp-zH-Ezf"/>
+                        <outlet property="tableView" destination="DFn-j6-iEr" id="Tqx-1P-g99"/>
+                        <outlet property="totalLabel" destination="hlo-4A-JSW" id="naA-Cr-d2e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWZ-n9-Nyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -761,7 +766,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ycv-Sx-qbH">
                             <connections>
-                                <segue destination="nci-iW-qgR" kind="unwind" unwindAction="saveTransaction:" id="Dds-xj-iiJ"/>
+                                <segue destination="nci-iW-qgR" kind="unwind" identifier="SaveTransactionSegue" unwindAction="saveTransaction:" id="Dds-xj-iiJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

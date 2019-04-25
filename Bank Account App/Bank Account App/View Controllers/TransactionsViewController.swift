@@ -10,6 +10,12 @@ import UIKit
 
 class TransactionsViewController:UIViewController
 {
+    @IBOutlet fileprivate weak var totalLabel: UILabel!
+    @IBOutlet fileprivate weak var numberLabel: UILabel!
+    @IBOutlet fileprivate weak var tableView: UITableView!
+    
+    fileprivate var dataSource:TransactionsDataSource!
+    
     var stateController:StateController!
     var account:Account!
     
@@ -18,6 +24,18 @@ class TransactionsViewController:UIViewController
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.title = account.name
+        numberLabel.text = account.number.accountNumberFormatting
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        totalLabel.text = account.getTotal().dollarsFormatting
+        dataSource = TransactionsDataSource(transactions: account.transactions)
+        tableView.dataSource = dataSource
+        tableView.reloadData()
     }
     
     @IBAction func cancelTransactionCreation(_ segue:UIStoryboardSegue)
@@ -30,6 +48,15 @@ class TransactionsViewController:UIViewController
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if  let navigationController = segue.destination as? UINavigationController,
+            let createTransactionViewController = navigationController.viewControllers.first as? CreateTransactionViewController
+        {
+            createTransactionViewController.delegate = self
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -40,4 +67,13 @@ class TransactionsViewController:UIViewController
     }
     */
 
+}
+
+extension TransactionsViewController:CreateTransactionViewControllerDelegate
+{
+    func add(newTransaction: Transaction)
+    {
+        account.transactions.append(newTransaction)
+        stateController.update(account: account)
+    }
 }
